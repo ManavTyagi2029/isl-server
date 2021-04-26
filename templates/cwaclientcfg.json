@@ -1,0 +1,33 @@
+{
+  "description"     : "========  CWASA installation configuration data  ========",
+  "jasBase"         : "http://vhg.cmp.uea.ac.uk/tech/jas/vhg2020/",
+  "jasVersionTag"   : "vhg2020",
+  "sigmlBase"       : "sigml",
+  "avJARBase"       : "avatars",
+  "avJSONBase"      : "avjson",
+  "useAvatarJARs"   : true,
+  "animgenFPS"      : 50,
+  "animgenServer"   : "http://vhg.cmp.uea.ac.uk/cgi-bin/animgen/animgenserver.pl",
+  "avs" : [
+    "anna", "marc", "francoise"
+  ],
+  "avsfull" : [
+    "anna",
+    "beatrice", "candy", "darshan", "francoise", "genie", "luna",
+    "marc", "max", "monkey", "otis", "robotboy", "siggi"
+  ],
+  "avSettings" : [
+    {
+      "description":      "Default if client configuration is missing or restricted",
+      "width":            384,
+      "height":           100,
+      "avList":           "avs",
+      "initAv":           "anna",
+      "initCamera":       [ 0, 0.23, 3.24, 5, 18, 30, -1, -1 ],
+      "allowFrameSteps":  true,
+      "initSiGMLURL":     "scotland-H.sigml",
+      "allowSiGMLText":   true
+    }
+  ]
+}
+

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ISL</title>
+	<link rel="stylesheet" href="static/css/jquery.pagepiling.css">
+
+	<!-- <link rel="stylesheet" href="jquerypagepiling.css"> -->
+
+
+	<!-- <script src="https://code.jquery.com/jquery-3.6.0.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!-- <script src="jquerypagepiling.min.js"></script> -->
+	<script src="static/js/jquery.pagepiling.min.js"></script>
+	<script>
+		var deleteLog = false;
+		$(document).ready(function(){
+
+		$('#pagepiling').pagepiling({
+				menu: '#menu',
+				anchors: ['Home','Try','page3','page4']
+
+
+		});
+		});
+
+	</script>
+
+
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+		}
+		h1{
+			font-size: 5em;
+			font-family: tahoma;
+			color: white;
+			margin: 0%;
+			padding: 0%;	
+		}
+
+		#section1 h1{
+			font-size: 5em;
+			position: absolute;
+			top: 19%;
+			left: 14.5%;
+			font-family: tahoma;
+			color: rgba(0, 0, 0, 0.85);
+			margin: 0%;
+			padding: 0%;	
+		}
+
+		.intro{
+			width: 50%;
+		}
+
+		.his{
+			font-size: 3em;
+			position: absolute;
+			top: 20%;
+			left: .6%;	
+		}
+		
+		.hisp{
+			color: rgba(0, 0, 0,0.6);
+			position: relative;
+			top:0;
+			left: 12px;
+			font-family: tahoma;
+			font-size: 1.1em;
+
+		}
+
+		.isl{
+
+			font-size: 3em;
+			position: absolute;
+			top: 48%;
+			left: .6%;
+
+		}
+		.islp{
+			color: rgba(0, 0, 0,0.6);
+			position: relative;
+			top:90px;
+			left: 12px;
+			font-family: tahoma;
+			font-size: 1.1em;
+
+		}
+/* 
+		.section{
+			text-align: center;
+		} */
+
+		#section1,
+		#section2,
+		#section3,
+		#section4{
+			background-size: cover;
+		}
+
+		#section1{
+			background-image: url(https://images.unsplash.com/photo-1517568730816-501aae259c65?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+
+        background-attachment: fixed;
+  background-position: center;
+		}
+
+
+		#section2{
+			background-image: url(https://image.freepik.com/free-photo/old-books-with-white-background-copy-space_23-2148898330.jpg);
+			background-position: center;
+		}
+
+
+		#section3{
+			background-image: url(https://image.freepik.com/free-photo/bullseye-yellow_72104-1395.jpg);
+			/* background-color: paleturquoise; */
+			background-position: center;
+		}
+
+
+		#section4{
+			background-image: url(https://image.freepik.com/free-photo/ballpoint-pen-showing-communication-contact-us-mail-concept-gray-background_127657-7189.jpg);
+
+			/* background-color: peachpuff; */
+			background-position: center;
+		}
+
+		#menu li{
+			display: inline-block;
+			margin: 10px;
+			color: #000;
+			background: white;
+			background: rgba(255, 255, 255,0.5);
+		}
+
+		#menu li.active{
+			background: #333;
+			background: rgba(0, 0, 0, 0.5);
+			color: white;
+		}
+
+		#menu li a{
+			text-decoration: none;
+			color: #000;
+			font-family: tahoma;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			font-size: 13px;
+		}
+
+		#menu li a, #menu li.active a{
+			padding: 9px 18px;
+			display: block;
+		}
+
+		#menu{
+			position: fixed;
+			top: 0;
+			left: 0;
+			height: 40px;
+			z-index: 70;
+			width: 100%;
+			padding: 0;
+			margin: 0;
+		}
+
+
+
+
+
+	</style>
+</head>
+<body>
+	<ul id="menu">
+		<li data-menuanchor="Home" class="active"><a href='#Home'>Home</a></li>
+		<li ><a href='m'>Try Now</a></li>
+		<li data-menuanchor="Try" ><a href='#Try'>History</a></li>
+		<li data-menuanchor="page3" ><a href='#page3'>Objective</a></li>
+		<li data-menuanchor="page4" ><a href='#page4'>Contact Us</a></li>
+
+	</ul>
+
+	<div id="pagepiling">
+		<div class="section one" id="section1">
+			<img src="static/b.jpg" alt="Girl in a jacket" style="position: absolute; top: 0%; left: 87%; height: 60px; width: 200px;">
+			<h1>Trying to Bridge the Gap...</h1>
+		</div>
+
+		<div class="section" id="section2">
+			<div class="intro">
+			<h1 class="his"> History</h1>
+			<p class="hisp">Sign language (SL) is a visual gesture language which includes face, hands and arms to convey thoughts and meanings. It is used by deaf communities for the sake of communication,which is done by using hands, face, arms and body. Sign language is not universal. It changes from one region to another. Every country has its own sign language which varies from other countries in terms of syntax and grammar.</p>
+			<h1 class="isl"> Indian Sign Language</h1>
+			<p class="islp">Deaf people in India use Indian Sign Language (ISL) as the main mode of communication among them. ISL is a natural sign language which has its own phonology, morphology, syntax, and grammar. The research on Indian Sign Language linguistics and phonological studies is limited because of lack of linguistically annotated and well documented data on Indian Sign Language. Indian Sign Language is used in deaf communities which include deaf people, hearing children of deaf adults, hearing parents of hearing-impaired children and hearing educators for deaf people. So, there is a need to build an automation system which can generate signs corresponding to the ISL words which are used while communicating with deaf people.</p>
+		</div>
+		</div>
+
+		<div class="section" id="section3">
+			<div class="intro">
+			<h1>fully effect</h1>
+			<p>trying  </p>
+		</div>
+		</div>
+
+		<div class="section" id="section4">
+			<div class="intro">
+			<h1>effect</h1>
+			<p>ing  </p>
+		</div>
+		</div>
+
+
+
+	</div>
+	
+
+</body>
+</html>
